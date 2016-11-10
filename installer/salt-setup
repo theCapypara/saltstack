@@ -1,0 +1,92 @@
+#!/bin/bash
+
+ec() {
+        echo -e "\033[0;32m$1\033[m"
+}
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+SYSTEMD_MODE=false
+NO_SELF_UPDATE=false
+
+while getopts ":snh" opt; do
+  case $opt in
+    s)
+      SYSTEMD_MODE=true
+      ;;
+    n)
+      NO_SELF_UPDATE=true
+      ;;
+    h)
+      echo "salt-setup [-s] [-n]"
+      echo "  -s  : Run in Systemd installation mode."
+      echo "        This will disable the system service afterwards and reboot."
+      echo "  -n  : Don't run a self-update, don't show splash."
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG. See -h for help" >&2
+      ;;
+  esac
+done
+
+main() {
+    if ! "$NO_SELF_UPDATE"; then
+        ec '
+                                   MMMMMMMMMM  MMMM                             
+                               7MM  MMMMMMMMM  MMMMM~                           
+                            ~MMMMM  MMMMMMMMM       +MMMMM                      
+                           MMMMMMMM  MMMMM     MMMMMMMMMMMMMMMMMMMMMMMN         
+                        M  MMMMMMMM  ~M   +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+                       MM  MMMMMMM     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN   
+                     MMMM$  MMMMM   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+                   MMMMM8         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8              
+                   MMM   +MMMM~   MMMMMMMMMMMMMMMMMMMMMMMMMMM        MMMMMMMM   
+               NM      MMMMMMMM:  MMMM  MM MMMMMMMMMMMMMM=     MMMMMMMMMMM      
+              MMMMM  MMMMMMMMMMM  MMMM      MMMMMMMMMMM    MMMMMMMMMMMO         
+            7MMMMMM  MMMMMMMMMMM  MMMM     MMMMMMMMMM,  ,MMMMMMMMMMM            
+             MMMMM  MMMMMMMMMMMM  MMMMMMMMMMMMMMMMM   MMMMMMMMMMMN              
+          MM        ,MMMMMMM7       MMMMMMMMMMMMMN   MMMMMMMMMMM                
+          MMMM   MMM          +MMM        ?MMMMM   MMMMMMMMMMMMM                
+         MMMMM  MMMM  MMMM  MMMMMM  MMMMMM   MMMMMMMMMMMMMMMMMMM                
+         MMMM  MMMM ,MMMMM  MMMMMMM  MMMMM7  MMMMMMMMMMMMMMMMMM                 
+              MMMM  MMMMMM  MMMMMMM          MMMMMMMMMMMMMMMMMM                 
+     MMMMMMMN                        M  +MMM MMMMMMMMMMMMMMMMM                  
+    MMMMMMMMM  MMMMMM  MMMMMMMMM  MMMMM  MMM MMMMMMMMMMMMMMMM                   
+        $MMMM  MMMMMM  MMMMMMMMM  MMMMMM  MM  MMMMMMMMMMMMMM$                   
+   7MMM+            $  MMMMMMMMM  MMMMMM      MMMMMMMMMMMMMM                    
+  MMMMMMMM= ?MMMO                             MMMMMMMMMMMMM                     
+MMMMMMMMMMM  MMMMMMM  OMMMMM       MM  MMMMMM  MMMMMMMMMMMM                     
+MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM                         
+  MMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM                                           
+   DMMMM      MMMMMN  MMMMMM? =MMMMMM                                           
+                      MMMMMMM  M                                                
+                                                                                '
+
+        ec "Welcome to the automatic setup of Arch Kokako."
+        ec "Phase 2: Saltstack and Dotfiles System and User Configuration"
+        ec ""
+
+        self_update
+    fi
+
+    echo "Dummy done."
+    read tst
+
+}
+
+self_update() {
+    ec "Running self update..."
+    cd $DIR
+    git fetch
+    git pull
+    $DIR/salt-setup $@ -n
+    exit
+}
+
+main
+
+
+## --systemd-installation:
+    #systemctl enable getty@tty1.service
+    #systemctl disable saltstack-kokako-install
+    #reboot

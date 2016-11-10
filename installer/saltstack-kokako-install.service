@@ -1,0 +1,12 @@
+[Unit]
+Description=saltstack-kokako-install
+After=systemd-user-sessions.service plymouth-quit-wait.service
+[Service]
+Type=oneshot
+StandardInput=tty
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+ExecStart=/srv/salt/installer/salt-setup -s
+[Install]
+WantedBy=multi-user.target
