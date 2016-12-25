@@ -30,8 +30,8 @@ while getopts ":snh" opt; do
 done
 
 main() {
-    if ! "$NO_SELF_UPDATE"; then
-        ec '
+      reset
+      ec '
                                    MMMMMMMMMM  MMMM                             
                                7MM  MMMMMMMMM  MMMMM~                           
                             ~MMMMM  MMMMMMMMM       +MMMMM                      
@@ -62,10 +62,11 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
                       MMMMMMM  M                                                
                                                                                 '
 
-        ec "Welcome to the automatic setup of Arch Kokako."
-        ec "Phase 2: Saltstack and Dotfiles System and User Configuration"
-        ec ""
+    ec "Welcome to the automatic setup of Arch Kokako."
+    ec "Phase 2: Saltstack and Dotfiles System and User Configuration"
+    ec ""
 
+    if ! "$NO_SELF_UPDATE"; then
         establish_network_connection
         self_update
     fi
