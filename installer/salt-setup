@@ -77,7 +77,15 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
 
 establish_network_connection() {
   ec "Trying to connect to the internet..."
+  ec "Waiting for interfaces..."
+  sleep 15
   dhcpcd > /dev/null
+  sleep 10
+  test_network_connection
+}
+
+test_network_connection() {
+  ec "Testing..."
   wget -q --spider http://google.com
   if [ $? -eq 0 ]; then
     ec "Successfully connected!"
@@ -85,6 +93,7 @@ establish_network_connection() {
     ec "Failed to connect. Please manually check internet connection."
     ec "Switch to a root terminal, connect and aftwards hit ENTER to continue."
     read
+    test_network_connection
   fi
 }
 
