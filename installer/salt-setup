@@ -66,12 +66,26 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
         ec "Phase 2: Saltstack and Dotfiles System and User Configuration"
         ec ""
 
+        establish_network_connection
         self_update
     fi
 
     echo "Dummy done."
     read tst
 
+}
+
+establish_network_connection() {
+  ec "Trying to connect to the internet..."
+  dhcpcd > /dev/null
+  wget -q --spider http://google.com
+  if [ $? -eq 0 ]; then
+    ec "Successfully connected!"
+  else
+    ec "Failed to connect. Please manually check internet connection."
+    ec "Switch to a root terminal, connect and aftwards hit ENTER to continue."
+    read
+  fi
 }
 
 self_update() {
