@@ -71,7 +71,11 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
         self_update
     fi
 
-    salt-call --local state.apply | less +FR
+    ec "First update all packages..."
+    pacman-key --refresh-keys
+    yaourt -Syu
+    ec "Now apply saltstack"
+    salt-call --local state.apply | less -R +F
     ec "We are done! We will now open a bash shell for manual fixes."
     ec "Type exit when you are done, the system will reboot then."
     bash
