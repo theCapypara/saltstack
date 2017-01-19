@@ -2,7 +2,6 @@ base:
   '*':
     - terminal.vim
     - terminal.git
-    - terminal.buildeps
     - terminal.openssh
     - terminal.fish
     - terminal.stow
