@@ -72,7 +72,7 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
     fi
 
     ec "First update all packages..."
-    pacman-key --refresh-keys
+    pacman -Sy archlinux-keyring --force
     pacman -Syu
     ec "Now apply saltstack"
     salt-call --local state.apply | less -R +F
