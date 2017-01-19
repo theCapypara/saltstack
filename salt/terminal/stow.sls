@@ -1,0 +1,3 @@
+stow:
+  pkg:
+    - installed

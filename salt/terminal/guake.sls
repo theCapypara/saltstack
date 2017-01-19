@@ -1,0 +1,3 @@
+guake:
+  pkg:
+    - installed

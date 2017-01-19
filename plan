@@ -1,0 +1,74 @@
+-- Common Programs --
+
+[  ] Meta:
+[  ] - AUR integration ("ppa"?)
+[  ] - User configuration
+
+[OK] terminal tools:
+[OK] - vim
+[OK] - git
+[OK] - buildeps
+[OK] - yaourt
+[OK] - tree
+[OK] - htop
+[OK] - openssh
+[OK] - fish
+[OK] - stow
+[OK] - tmux
+[OK] - gpg
+[OK] - gpg smartcard stuff
+[OK] - fdisk
+[OK] - guake
+[OK] - sudo
+
+[  ] Desktop:
+[  ] - gnome
+[  ] - google-chrome
+
+[  ] Multimedia:
+[  ] - spotify
+[  ] - banshee
+[  ] - Steam
+
+[  ] Development:
+[  ] - IntelliJ, Webstorm, PHPStorm
+[  ] - vs-code
+[  ] - texstudio
+[  ] - Apache
+[  ] - Nginx Main Proxy
+[  ] - PHP
+[  ] - Composer
+[  ] - MySQL
+[  ] - Java
+[  ] - Maven
+[  ] - NodeJS / npm
+[  ] - meld
+[  ] - Hipchat4
+
+[  ] Cloud:
+[  ] - Syncthing
+[  ] - smb
+[  ] - sshfs
+[  ] - Thunderbird
+
+[  ] VPN:
+[  ] - openconnect NetworkManager
+[  ] - OpenVPN (NM?)
+
+[  ] Creativity:
+[  ] - GIMP
+[  ] - Inkscape
+[  ] - SimpleScan
+[  ] - Dia
+
+[  ] Productivity:
+[  ] - MS Office (WINE)
+[  ] - LibreOffice
+
+[  ] Misc:
+[  ] - pass, Qtpass
+[  ] - Seahorse, Seahorse-Nautilus
+[  ] - Oracle VirtualBox
+[  ] - Redshift
+[  ] - WINE
+[  ] - testdisk

@@ -71,9 +71,15 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
         self_update
     fi
 
-    echo "Dummy done."
+    salt-call --local state.apply
+    ec "We are done! We will now open a bash shell for manual fixes."
+    ec "Type exit when you are done, the system will reboot then."
     read tst
-
+    if "$SYSTEMD_MODE"; then
+        systemctl enable getty@tty1.service
+        systemctl disable saltstack-kokako-install
+    fi
+    reboot
 }
 
 establish_network_connection() {
