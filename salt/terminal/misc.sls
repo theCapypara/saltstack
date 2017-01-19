@@ -6,6 +6,6 @@ htop:
   pkg:
     - installed
 
-fdisk:
+libutil-linux:
   pkg:
     - installed
