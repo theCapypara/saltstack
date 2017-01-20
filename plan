@@ -8,7 +8,7 @@
 [OK] - vim
 [OK] - git
 [OK] - buildeps
-[OK] - yaourt
+[  ] - yaourt
 [OK] - tree
 [OK] - htop
 [OK] - openssh
@@ -31,7 +31,7 @@
 [  ] - Steam
 
 [  ] Development:
-[  ] - IntelliJ, Webstorm, PHPStorm
+[  ] - IntelliJ, Webstorm, PHPStorm (intellij-idea-community-edition)
 [  ] - vs-code
 [  ] - texstudio
 [  ] - Apache

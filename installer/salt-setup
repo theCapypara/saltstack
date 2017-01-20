@@ -72,8 +72,8 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
     fi
 
     ec "First update all packages..."
-    pacman -Sy archlinux-keyring --force
-    pacman -Syu
+    pacman -Sy archlinux-keyring --noconfirm
+    pacman -Syu --noconfirm
     ec "Now apply saltstack"
     salt-call --local state.apply | less -R +F
     ec "We are done! We will now open a bash shell for manual fixes."
@@ -118,9 +118,3 @@ self_update() {
 }
 
 main
-
-
-## --systemd-installation:
-    #systemctl enable getty@tty1.service
-    #systemctl disable saltstack-kokako-install
-    #reboot
