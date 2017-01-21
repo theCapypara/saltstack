@@ -5,3 +5,7 @@ xorg-server:
 xorg-server-utils:
   pkg:
     - installed
+
+xorg-xinit:
+  pkg:
+    - installed
