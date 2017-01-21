@@ -40,6 +40,7 @@ base:
     - cloud.syncthing
     - cloud.thunderbird
     
+    - desktop.xorg
     - desktop.gnome
     - desktop.chrome
     
