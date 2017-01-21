@@ -1,3 +1,3 @@
-vs-code:
+visual-studio-code:
   pkg:
     - installed
