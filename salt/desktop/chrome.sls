@@ -1,0 +1,3 @@
+google-chrome:
+  pkg:
+    - installed

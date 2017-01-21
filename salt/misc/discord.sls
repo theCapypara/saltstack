@@ -1,0 +1,3 @@
+discord-canary:
+  pkg:
+    - installed

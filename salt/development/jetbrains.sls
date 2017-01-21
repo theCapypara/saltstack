@@ -1,15 +1,11 @@
-tree:
+phpstorm:
   pkg:
     - installed
 
-htop:
+webstorm:
   pkg:
     - installed
 
-libutil-linux:
-  pkg:
-    - installed
-
-lm_sensors:
+intellij-idea-community-edition:
   pkg:
     - installed

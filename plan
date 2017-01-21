@@ -1,14 +1,14 @@
 -- Common Programs --
 
 [  ] Meta:
-[  ] - AUR integration ("ppa"?)
+[OK] - AUR integration ("ppa"?)
 [  ] - User configuration
 
 [OK] terminal tools:
 [OK] - vim
 [OK] - git
 [OK] - buildeps
-[  ] - yaourt
+[OK] - yaourt
 [OK] - tree
 [OK] - htop
 [OK] - openssh
@@ -21,19 +21,22 @@
 [OK] - guake
 [OK] - sudo
 
-[  ] Desktop:
-[  ] - gnome
-[  ] - google-chrome
+[OK] Desktop:
+[OK] - gnome
+[OK] - google-chrome
 
-[  ] Multimedia:
-[  ] - spotify
-[  ] - banshee
-[  ] - Steam
+[OK] Multimedia:
+[OK] - spotify
+[OK] - banshee
+[OK] - Steam
+[OK] - VLC
+[OK] - gstreamer
+[OK] - PulseAudio
 
 [  ] Development:
-[  ] - IntelliJ, Webstorm, PHPStorm (intellij-idea-community-edition)
-[  ] - vs-code
-[  ] - texstudio
+[OK] - IntelliJ, Webstorm, PHPStorm (intellij-idea-community-edition)
+[OK] - vs-code
+[OK] - texstudio
 [  ] - Apache
 [  ] - Nginx Main Proxy
 [  ] - PHP
@@ -42,33 +45,32 @@
 [  ] - Java
 [  ] - Maven
 [  ] - NodeJS / npm
-[  ] - meld
-[  ] - Hipchat4
+[OK] - meld
+[OK] - Hipchat4
 
-[  ] Cloud:
-[  ] - Syncthing
-[  ] - smb
-[  ] - sshfs
-[  ] - Thunderbird
+[OK] Cloud:
+[OK] - Syncthing
+[OK] - Thunderbird
 
-[  ] VPN:
-[  ] - openconnect NetworkManager
-[  ] - OpenVPN (NM?)
+[OK] VPN:
+[OK] - openconnect NetworkManager
+[OK] - OpenVPN (NM?)
 
-[  ] Creativity:
-[  ] - GIMP
-[  ] - Inkscape
-[  ] - SimpleScan
-[  ] - Dia
+[OK] Creativity:
+[OK] - GIMP
+[OK] - Inkscape
+[OK] - SimpleScan
+[OK] - Dia
 
-[  ] Productivity:
-[  ] - MS Office (Crossover)
-[  ] - LibreOffice
+[~~] Productivity:
+[XX] - MS Office (Crossover)
+[OK] - LibreOffice
 
-[  ] Misc:
-[  ] - pass, Qtpass
-[  ] - Seahorse, Seahorse-Nautilus
-[  ] - Oracle VirtualBox
-[  ] - Redshift
-[  ] - Crossover
-[  ] - testdisk
+[OK] Misc:
+[OK] - pass, Qtpass
+[OK] - Seahorse, Seahorse-Nautilus
+[OK] - Oracle VirtualBox
+[OK] - Redshift
+[OK] - Crossover
+[OK] - testdisk
+[OK] - discord

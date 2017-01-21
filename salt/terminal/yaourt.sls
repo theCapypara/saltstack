@@ -1,0 +1,3 @@
+yaourt:
+  pkg:
+    - installed

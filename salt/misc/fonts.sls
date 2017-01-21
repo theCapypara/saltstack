@@ -1,0 +1,3 @@
+ttf-liberation:
+  pkg:
+    - installed

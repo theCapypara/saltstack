@@ -1,15 +1,11 @@
-tree:
+pass:
   pkg:
     - installed
 
-htop:
+pwgen:
   pkg:
     - installed
 
-libutil-linux:
-  pkg:
-    - installed
-
-lm_sensors:
+qtpass:
   pkg:
     - installed

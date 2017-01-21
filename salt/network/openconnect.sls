@@ -1,0 +1,3 @@
+networkmanager-openconnect:
+  pkg:
+    - installed

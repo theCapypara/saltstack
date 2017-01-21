@@ -1,15 +1,15 @@
-tree:
+libreoffice-fresh:
   pkg:
     - installed
 
-htop:
+libreoffice-fresh-de:
   pkg:
     - installed
 
-libutil-linux:
+hunspell:
   pkg:
     - installed
 
-lm_sensors:
+hunspell-de:
   pkg:
     - installed

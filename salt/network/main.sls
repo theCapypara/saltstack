@@ -1,0 +1,3 @@
+networkmanager:
+  pkg:
+    - installed

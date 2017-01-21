@@ -1,0 +1,3 @@
+crossover:
+  pkg:
+    - installed

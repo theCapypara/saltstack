@@ -1,0 +1,3 @@
+networkmanager-openvpn:
+  pkg:
+    - installed

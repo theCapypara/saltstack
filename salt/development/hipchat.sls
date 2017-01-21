@@ -1,0 +1,3 @@
+hipchat:
+  pkg:
+    - installed
