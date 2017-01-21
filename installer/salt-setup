@@ -78,7 +78,7 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
     ec "Now apply saltstack"
     salt-call --local state.apply | less -R +F
     ec "We will now try to install a graphics driver. Please choose the correct one from the list"
-    yaourt xf86-video --noconfirm
+    sudo pacman -S xorg-drivers
     ec "We are done! We will now open a bash shell for manual fixes."
     ec "Type exit when you are done, the system will reboot then."
     bash
