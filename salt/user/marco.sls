@@ -7,7 +7,7 @@ marco:
       - sudo
       - users
     - require:
-      - sudo
+      - group_sudo
 
 temp_ssh_key:
   file.copy:
