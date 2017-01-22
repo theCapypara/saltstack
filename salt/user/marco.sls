@@ -35,6 +35,16 @@ temp_ssh_key_pub:
     - require:
       - ssh_directory
 
+temp_ssh_key_known_hosts:
+  file.copy:
+    - name: /home/marco/.ssh/known_hosts
+    - user: marco
+    - group: users
+    - mode: 600
+    - source: /root/.ssh/known_hosts
+    - require:
+      - ssh_directory
+
 marco_dotfiles:
   git.latest:
     - name: gitolite@parakoopa.de:dotfiles
@@ -44,6 +54,7 @@ marco_dotfiles:
       - marco
       - temp_ssh_key
       - temp_ssh_key_pub
+      - temp_ssh_key_known_hosts
 
 apply_dotfiles:
   cmd.run:
