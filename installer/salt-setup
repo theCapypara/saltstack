@@ -76,7 +76,7 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
     pacman -Sy archlinux-keyring --noconfirm
     pacman -Syu --noconfirm
     ec "Now apply saltstack"
-    salt-call --local state.apply | less -R +F
+    salt-call --local state.apply -l info | less -R +F
     ec "We are done! We will now open a bash shell for manual fixes."
     ec "Type exit when you are done, the system will reboot then."
     bash
