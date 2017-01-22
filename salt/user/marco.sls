@@ -1,6 +1,6 @@
 marco:
   user.present:
-    - fullname: Marco Köpcke
+    - fullname: Marco
     - shell: /usr/bin/fish
     - home: /home/marco
     - groups:
