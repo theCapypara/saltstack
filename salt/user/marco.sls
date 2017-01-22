@@ -9,6 +9,12 @@ marco:
     - require:
       - group_sudo
 
+ssh_directory:
+  file.directory:
+    - name: /home/marco/.ssh
+    - require:
+      - marco
+
 temp_ssh_key:
   file.copy:
     - name: /home/marco/.ssh/id_rsa
@@ -17,7 +23,7 @@ temp_ssh_key:
     - mode: 600
     - source: /root/.ssh/id_rsa
     - require:
-      - marco
+      - ssh_directory
 
 temp_ssh_key_pub:
   file.copy:
@@ -27,7 +33,7 @@ temp_ssh_key_pub:
     - mode: 600
     - source: /root/.ssh/id_rsa.pub
     - require:
-      - marco
+      - ssh_directory
 
 marco_dotfiles:
   git.latest:
