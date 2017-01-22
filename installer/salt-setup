@@ -77,6 +77,8 @@ MMMMMMMMMMM  MMMMMMM  MMMMMM  MMMMMMM  MMMMM     MMMMMM
     pacman -Syu --noconfirm
     ec "Now apply saltstack"
     salt-call --local state.apply -l info | less -R +F
+    ec "Enter a password for marco"
+    passwd marco
     ec "We are done! We will now open a bash shell for manual fixes."
     ec "Type exit when you are done, the system will reboot then."
     bash
