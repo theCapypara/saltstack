@@ -51,3 +51,6 @@ base:
     - development.meld
 
     - office.libreoffice
+
+    - user.groups
+    - user.marco
