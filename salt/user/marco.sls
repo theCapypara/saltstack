@@ -50,6 +50,7 @@ marco_dotfiles:
     - name: gitolite@parakoopa.de:dotfiles
     - target: /home/marco/dotfiles
     - user: marco
+    - submodules: true
     - require:
       - marco
       - temp_ssh_key
