@@ -43,6 +43,7 @@ base:
     - desktop.xorg
     - desktop.gnome
     - desktop.chrome
+    - desktop.chrome-gnome
     
     - development.jetbrains
     - development.vscode
