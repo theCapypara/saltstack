@@ -47,7 +47,7 @@ temp_ssh_key_known_hosts:
 
 marco_dotfiles:
   git.latest:
-    - name: gitolite@parakoopa.de:dotfiles
+    - name: git@github.com:Parakoopa/dotfiles.git
     - target: /home/marco/dotfiles
     - user: marco
     - submodules: true
