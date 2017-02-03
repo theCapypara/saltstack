@@ -57,10 +57,10 @@ marco_dotfiles:
       - temp_ssh_key_pub
       - temp_ssh_key_known_hosts
 
-apply_dotfiles:
-  cmd.run:
-    - cwd: /home/marco/dotfiles
-    - name: /home/marco/dotfiles/apply.sh
-    - runas: marco
-    - require:
-      - marco_dotfiles
+#apply_dotfiles:
+#  cmd.run:
+#    - cwd: /home/marco/dotfiles
+#    - name: /home/marco/dotfiles/apply.sh
+#    - runas: marco
+#    - require:
+#      - marco_dotfiles
