@@ -50,6 +50,11 @@ base:
     - development.texstudio
     - development.hipchat
     - development.meld
+    - development.nginx
+    - development.apache
+    - development.php
+    - development.php56
+    - development.mysql56
 
     - office.libreoffice
 
