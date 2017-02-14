@@ -13,3 +13,7 @@ libutil-linux:
 lm_sensors:
   pkg:
     - installed
+
+rofi:
+  pkg:
+    - installed

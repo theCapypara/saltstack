@@ -1,0 +1,9 @@
+##
+## VHOST DEFINITIONEN
+##
+
+# SYNTAX:
+#Use VHost	NAME			    PFAD (rel. zu /var/www)	PHP-V.
+#Use VHost 	magento-demo 		magento-demo 		    56
+#Use VHost 	magento-demo 		magento-demo 		    CC
+

@@ -5,6 +5,10 @@ php:
 php-fpm:
   pkg:
     - installed
+  service:
+    - enabled
+    - require:
+      - pkg: php-fpm
 
 php-gd:
   pkg:
@@ -37,3 +41,8 @@ php-xsl:
 composer:
   pkg:
     - installed
+
+php configuration:
+  file.recurse:
+    - name: /etc/php
+    - source: salt://development/php

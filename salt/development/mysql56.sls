@@ -9,3 +9,9 @@ libmysqlclient56:
 mysql-clients56:
   pkg:
     - installed
+    
+mysqld:
+  service:
+    - enabled
+    - require:
+      - pkg: mysql56
