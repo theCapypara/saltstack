@@ -46,3 +46,7 @@ php configuration:
   file.recurse:
     - name: /etc/php
     - source: salt://development/php
+
+/run/phpCC-fpm:
+  file.symlink:
+    - target: /run/php-fpm
