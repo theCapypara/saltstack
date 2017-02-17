@@ -7,8 +7,9 @@ libusb-compat:
 ccid:
   pkg:
     - installed
-pcscd:
+pcsclite:
   pkg:
     - installed
+pcscd:
   service:
     - enabled
