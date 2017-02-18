@@ -55,6 +55,7 @@ base:
     - development.php
     - development.php56
     - development.mysql56
+    - development.node
 
     - office.libreoffice
 
