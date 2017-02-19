@@ -11,6 +11,7 @@ base:
     - terminal.guake
     - terminal.yaourt
     - terminal.grc
+    - terminal.fzf
     - terminal.misc
 
     - multimedia.banshee
