@@ -10,6 +10,7 @@ base:
     - terminal.sudo
     - terminal.guake
     - terminal.yaourt
+    - terminal.grc
     - terminal.misc
 
     - multimedia.banshee
