@@ -22,6 +22,6 @@ xorg-drivers:
   pkg:
     - group_installed
 
-xdotools:
+xdotool:
   pkg:
     - installed
