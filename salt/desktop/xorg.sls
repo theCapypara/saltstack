@@ -21,3 +21,7 @@ acpi:
 xorg-drivers:
   pkg:
     - group_installed
+
+xdotools:
+  pkg:
+    - installed
