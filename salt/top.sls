@@ -38,6 +38,7 @@ base:
     - misc.testdisk
     - misc.fonts
     - misc.discord
+    - misc.cron
 
     - cloud.syncthing
     - cloud.thunderbird

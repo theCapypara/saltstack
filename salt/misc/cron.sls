@@ -1,0 +1,3 @@
+cronie:
+  pkg:
+    - installed
