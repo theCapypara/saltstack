@@ -39,6 +39,7 @@ base:
     - misc.fonts
     - misc.discord
     - misc.cron
+    - misc.sysctl
 
     - cloud.syncthing
     - cloud.thunderbird
