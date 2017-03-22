@@ -50,7 +50,7 @@ base:
     - desktop.chrome-gnome
     
     - development.jetbrains
-    - development.vscode
+    - development.atom
     - development.texstudio
     - development.hipchat
     - development.meld
