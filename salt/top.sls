@@ -43,12 +43,12 @@ base:
 
     - cloud.syncthing
     - cloud.thunderbird
-    
+
     - desktop.xorg
     - desktop.gnome
     - desktop.chrome
     - desktop.chrome-gnome
-    
+
     - development.jetbrains
     - development.atom
     - development.texstudio
@@ -60,6 +60,8 @@ base:
     - development.php56
     - development.mysql56
     - development.node
+
+    - development.haw.erlang
 
     - office.libreoffice
 
