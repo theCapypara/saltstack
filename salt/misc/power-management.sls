@@ -9,3 +9,7 @@ ethtool:
 gnome-power-manager:
   pkg:
     - installed
+
+tlp:
+  pkg:
+    - installed
