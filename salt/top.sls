@@ -40,6 +40,7 @@ base:
     - misc.discord
     - misc.cron
     - misc.sysctl
+    - misc.power-management
 
     - cloud.syncthing
     - cloud.thunderbird
