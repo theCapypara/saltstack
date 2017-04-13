@@ -1,0 +1,3 @@
+pacaur:
+  pkg:
+    - installed

@@ -9,7 +9,7 @@ base:
     - terminal.gnupg
     - terminal.sudo
     - terminal.guake
-    - terminal.yaourt
+    - terminal.pacaur
     - terminal.grc
     - terminal.fzf
     - terminal.misc
