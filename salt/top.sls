@@ -49,6 +49,8 @@ base:
     - desktop.gnome
     - desktop.chrome
     - desktop.chrome-gnome
+    - desktop.theme
+    - desktop.fonts
 
     - development.jetbrains
     - development.atom
