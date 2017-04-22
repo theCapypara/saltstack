@@ -14,7 +14,7 @@ base:
     - terminal.fzf
     - terminal.misc
 
-    - multimedia.banshee
+    - multimedia.rhythmbox
     - multimedia.spotify
     - multimedia.steam
     - multimedia.gstreamer

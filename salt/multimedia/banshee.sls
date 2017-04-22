@@ -1,3 +1,0 @@
-banshee:
-  pkg:
-    - installed
