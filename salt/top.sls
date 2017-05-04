@@ -31,6 +31,7 @@ base:
 
     - security.pass
     - security.seahorse
+    - security.rofi
 
     - misc.virtualbox
     - misc.redshift
