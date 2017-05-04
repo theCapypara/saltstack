@@ -13,3 +13,7 @@ paper-icon-theme-git:
 arc-gtk-theme:
   pkg:
     - installed
+
+qt5-styleplugins:
+  pkg:
+    - installed
