@@ -6,7 +6,7 @@ gtk-engine-murrine:
   pkg:
     - installed
 
-paper-icon-theme-git:
+papirus-icon-theme:
   pkg:
     - installed
 
