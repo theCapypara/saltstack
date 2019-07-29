@@ -14,6 +14,14 @@ arc-gtk-theme:
   pkg:
     - installed
 
+arc-kde:
+  pkg:
+    - installed
+
+qgnomeplatform:
+  pkg:
+    - installed
+
 qt5-styleplugins:
   pkg:
     - installed
