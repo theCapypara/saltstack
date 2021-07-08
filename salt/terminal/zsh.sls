@@ -1,3 +1,3 @@
-atom:
+zsh:
   pkg:
     - installed

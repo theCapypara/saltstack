@@ -1,3 +1,0 @@
-redshift:
-  pkg:
-    - installed

@@ -1,3 +1,3 @@
-crossover:
+vs-codium:
   pkg:
     - installed

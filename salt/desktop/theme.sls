@@ -22,6 +22,10 @@ qgnomeplatform:
   pkg:
     - installed
 
+kvantum-qt5:
+  pkg:
+    - installed
+
 qt5-styleplugins:
   pkg:
     - installed

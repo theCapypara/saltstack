@@ -1,7 +1,7 @@
-erlang:
+python:
   pkg:
     - installed
 
-elixir:
+python-pip:
   pkg:
     - installed

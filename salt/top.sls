@@ -3,13 +3,14 @@ base:
     - terminal.vim
     - terminal.git
     - terminal.openssh
-    - terminal.fish
+    - terminal.zsh
+    - terminal.trizen
     - terminal.stow
     - terminal.tmux
     - terminal.gnupg
     - terminal.sudo
     - terminal.guake
-    - terminal.pacaur
+    - terminal.trizen
     - terminal.grc
     - terminal.fzf
     - terminal.misc
@@ -33,10 +34,7 @@ base:
     - security.seahorse
     - security.rofi
 
-    - misc.virtualbox
-    - misc.redshift
-    - misc.crossover
-    - misc.testdisk
+    - misc.libvirt
     - misc.fonts
     - misc.discord
     - misc.cron
@@ -54,18 +52,12 @@ base:
     - desktop.fonts
 
     - development.jetbrains
-    - development.atom
-    - development.texstudio
-    - development.hipchat
+    - development.vs-codium
+    - development.docker
+    - development.slack
+    - development.kubectl
     - development.meld
-    - development.nginx
-    - development.apache
-    - development.php
-    - development.php56
-    - development.mysql56
-    - development.node
-
-    - development.haw.erlang
+    - development.python
 
     - office.libreoffice
 

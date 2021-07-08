@@ -1,0 +1,3 @@
+trizen:
+  pkg:
+    - installed

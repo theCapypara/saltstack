@@ -1,3 +1,3 @@
-hipchat:
+slack:
   pkg:
     - installed

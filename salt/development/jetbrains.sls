@@ -2,10 +2,6 @@ phpstorm:
   pkg:
     - installed
 
-webstorm:
-  pkg:
-    - installed
-
-intellij-idea-community-edition:
+pycharm-professional:
   pkg:
     - installed

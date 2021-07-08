@@ -1,3 +1,0 @@
-texstudio:
-  pkg:
-    - installed

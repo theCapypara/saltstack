@@ -1,3 +1,0 @@
-testdisk:
-  pkg:
-    - installed
